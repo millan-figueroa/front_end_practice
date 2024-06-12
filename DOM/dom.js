@@ -61,3 +61,12 @@ input.value = 'Hello World';
 
 let submit = document.querySelector('input[type="submit"]');
 submit.value = 'SEND';
+
+let item = document.querySelector('.list-group-item');
+item.style.color = 'red';
+
+let lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'coral';
+
+let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.color= 'blue';
