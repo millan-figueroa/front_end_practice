@@ -29,7 +29,7 @@
 // add red 4px border to bottom of header
 
 
-//GET ELEMENT BY CLASS NAME
+// GET ELEMENT BY CLASS NAME
 
 // log elements with the class 'list-group-item'
 
@@ -42,42 +42,37 @@
 // Make every other item background color grey
 
 
-// //GET ELEMENTS BY TAG NAME
+// GET ELEMENTS BY TAG NAME
 
-// let li = document.getElementsByTagName('li');
-// console.log(li);
-// console.log(li[1]);
-// items[1].textContent = 'Hello 2';
-// items[1].style.fontWeight = 'bold';
+// log the third item in the group above
 
-// for (let i = 0; i < li.length; i++) {
-//     li[i].style.backgroundColor = 'pink';
-// }
+// Change the name of the first item
 
-// //QUERY SELECTOR
-// let header = document.querySelector('#main-header');
-// header.style.borderBottom = 'solid 4px blue';
+// Make the second item bold
 
-// let input = document.querySelector('input');
-// input.value = 'Hello World';
+// Make every other item background color pink
 
-// let submit = document.querySelector('input[type="submit"]');
-// submit.value = 'SEND';
 
-// let item = document.querySelector('.list-group-item');
-// item.style.color = 'red';
+// USE QUERY SELECTOR
 
-// let lastItem = document.querySelector('.list-group-item:last-child');
-// lastItem.style.color = 'coral';
+// Give header bottom a blue border
 
-// let secondItem = document.querySelector('.list-group-item:nth-child(2)');
-// secondItem.style.color= 'blue';
+// Make the input in the first form say 'Sup'
 
-// //TRAVERSING THE DOM
+// Change the button value to say ADD
 
-// let itemList = document.querySelector('#items');
-// // parentNode
-// console.log(itemList.parentNode);
+// Make item 1 red
+
+// Make last item coral
+
+// Make second item blue
+
+
+//TRAVERSING THE DOM
+
+let itemList = document.querySelector('#items');
+// parentNode
+console.log(itemList.parentNode);
 
 let odd = document.querySelectorAll('li:nth-child(odd)');
 
