@@ -2,30 +2,29 @@
 
 // ***** EXAMINE THE DOCUMENT OBJECT *****
 
-// //log document directory --> #document
-// console.dir(document);
+//log document directory --> #document
 
-// //2 ways to log url of page --> file:///C:/Users/Millan/OneDrive/Repos/practice_projects/front_end_practice/DOM/index.html
-// console.log(document.URL);
 
-// //log all elements within page with corresponding indexes --> Nodelist(23) and a dropdown w every item
-// console.log(document.querySelectorAll('*'));
+//2 ways to log url of page --> file:///C:/Users/Millan/OneDrive/Repos/practice_projects/front_end_practice/DOM/index.html
 
-// //log the element corresponding to the 5th index --> <meta charset="UTF-8">
-// let elements = document.querySelectorAll('*');
-// console.log(elements[2]);
 
-// //log title of the page --> Item Lister
-// console.log(document.title);
+//log all elements within page with corresponding indexes --> Nodelist(23) and a dropdown w every item
 
-// //log the head section --> <head>...</head>
-// console.log(document.head); 
 
-// //log the body section --> <body>...</body>
-// console.log(document.body);
+//log the element corresponding to the 5th index --> <meta charset="UTF-8">
 
-// //log all the forms on the page --> HTMLCollection [form.form-inline.mb-3]
-// console.log(document.forms);
+
+//log title of the page --> Item Lister
+
+
+//log the head section --> <head>...</head>
+
+
+//log the body section --> <body>...</body>
+
+
+//log all the forms on the page --> HTMLCollection [form.form-inline.mb-3]
+
 
 
 
