@@ -77,30 +77,35 @@
 // USE QUERY SELECTOR
 
 // Give header bottom a blue border
-let header = document.querySelector('#main-header');
-header.style.borderBottom = '4px solid blue';
+
 
 // Make the input in the first form say 'Sup'
-let firstForm = document.querySelector('input');
-firstForm.value = 'Sup';
+
 
 // Change the button value to say ADD
-let button = document.querySelector('form.form-inline [type=submit]');
-button.value = 'ADD';
+
 
 // Change the button color to blue **Challenge:use a different selector
-button.style.backgroundColor = 'blue';
+
 
 // Make 'Item 1' text red
-let itemsList = document.querySelectorAll('li');
-console.log(itemsList);
-itemsList[0].style.color = 'red';
+
 
 // Make 'Item 4' background coral
-itemsList[3].style.backgroundColor = 'coral';
+
 
 // Make 'Item 2' text blue
-itemsList[1].style.color = 'blue';
+
+
+// Using a different selector, change the text of 'Item 4' to white
+
+
+// Change the background color of Item 3 to blue and text color to white using 'nth child' selector
+
+
+// Using a for loop, make the background color of the odd number Items pink;
+
+
 
 
 //TRAVERSING THE DOM
