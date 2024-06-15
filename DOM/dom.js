@@ -1,5 +1,7 @@
 // When each part is done, comment it out to clear out console and reset styles
 
+
+
 // ***** EXAMINE THE DOCUMENT OBJECT *****
 
 //log document directory --> #document
@@ -30,42 +32,36 @@
 
 // ***** GET ELEMENT BY ID *****
 
-// // log the header title --> <h1 id="header-title"> Item Lister </h1>
-// let headerTitle = document.getElementById('header-title');
-// console.log(headerTitle);
+// log the header title --> <h1 id="header-title"> Item Lister </h1>
 
-// // change header title --> <h1 id="header-title"> Header 2.0 </h1>
-// headerTitle.textContent = 'Header 2.0';
-// console.log(headerTitle)
 
-// // add +94px border to bottom of header --> border should appear
-// let mainHeader = document.getElementById('main-header');
-// mainHeader.style.borderBottom = 'solid 6px grey';
-// mainHeader.style.borderTop = 'solid 6px grey';
+// change header title --> <h1 id="header-title"> Header 2.0 </h1>
+
+
+// add +94px border to bottom of header --> border should appear
+
 
 
 // ***** GET ELEMENT BY CLASS NAME *****
 
 // log elements with the class 'list-group-item' --> HTMLCollection(4)
-let items = document.getElementsByClassName('list-group-item');
-console.log(items);
+
 
 // log the third item in the group above --> <li class="list-group-item">Item 3</li>
-console.log(items[2]);
+
 
 // Change the name of the first item --> item 1 should change
-items[0].textContent = 'Special Item 1'
+
 
 // Make the second item bold --> item 2 should appear bold
-items[1].style.fontWeight = 'bold';
+
 
 // Make the background of the third item light grey (#dbdbdb)
-items[2].style.backgroundColor = '#dbdbdb';
+
 
 // Make every other item background color coral in one code block --> Background color of item 2 and item 4 should be coral in one code block
-for (let i=0; i < items.length; i++) {
 
-}
+
 
 // ***** GET ELEMENTS BY TAG NAME *****
 
@@ -81,16 +77,30 @@ for (let i=0; i < items.length; i++) {
 // USE QUERY SELECTOR
 
 // Give header bottom a blue border
+let header = document.querySelector('#main-header');
+header.style.borderBottom = '4px solid blue';
 
 // Make the input in the first form say 'Sup'
+let firstForm = document.querySelector('input');
+firstForm.value = 'Sup';
 
 // Change the button value to say ADD
+let button = document.querySelector('form.form-inline [type=submit]');
+button.value = 'ADD';
 
-// Make item 1 red
+// Change the button color to blue **Challenge:use a different selector
+button.style.backgroundColor = 'blue';
 
-// Make last item coral
+// Make 'Item 1' text red
+let itemsList = document.querySelectorAll('li');
+console.log(itemsList);
+itemsList[0].style.color = 'red';
 
-// Make second item blue
+// Make 'Item 4' background coral
+itemsList[3].style.backgroundColor = 'coral';
+
+// Make 'Item 2' text blue
+itemsList[1].style.color = 'blue';
 
 
 //TRAVERSING THE DOM
