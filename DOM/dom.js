@@ -139,3 +139,32 @@ console.log(itemList.nextElementSibling);
 // Change the color of the previous sibling of the items list to pink. 
 
 itemList.previousElementSibling.style.backgroundColor = 'pink';
+
+
+// ***** CREATING ELEMENTS *****
+
+// Create a new div with a class and IDof hello
+let newDiv = document.createElement('div');
+newDiv.className = 'hello';
+newDiv.id = 'hello';
+
+// Set a title of 'hello Div' to the new div
+newDiv.setAttribute('title', 'newDiv');
+
+
+// Create a new text node to the div that says 'Hello World!', then add that text to the div
+let newDivText = document.createTextNode('Hello World!');
+newDiv.appendChild(newDivText);
+console.log(newDiv);
+
+// Now add your newly created div to the DOM!
+
+let container = document.querySelector('header .container');
+let h1 = document.querySelector('header h1');
+
+container.insertBefore(newDiv,h1);
+
+// Lastly, change the font size of the newDiv's text to 30px;
+
+newDiv.style.fontSize = '30px';
+console.log(newDiv);
